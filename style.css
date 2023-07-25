@@ -1,0 +1,194 @@
+@import "nav.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  font-family: 'Josefin Slab', serif;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 8%;
+  flex-wrap: wrap;
+}
+
+.c0 img {
+  width: 171px;
+}
+
+.c0 {
+  font-size: 35px;
+  padding-bottom: 300px;
+
+}
+
+.imgbox {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.imgbox img {
+  height: 450px;
+  width: 550px;
+  position: relative;
+  top: 10px;
+  animation: animateUser 4s linear infinite;
+}
+
+.c1 #fundo {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  width: 510px;
+  height: 400px;
+}
+
+@keyframes animateUser {
+  50% {
+    top: -50px;
+  }
+}
+
+main {
+  height: 450px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 49% 51%;
+  grid-template-rows: 1fr;
+  position: relative;
+}
+
+.imgrigth {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.imagrigth,
+.imagleft {
+  height: 450px;
+  width: 100%;
+}
+
+.imagrigth img,
+.imagleft img {
+  height: 100%;
+  width: 100%;
+}
+
+.imgleft {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer {
+  height: 450px;
+  background: #F3F2F2;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 20px;
+}
+
+footer .rodape {
+  padding-left: 20px;
+  font-size: 20px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  line-height: 30px;
+}
+
+footer img {
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+footer p {
+  padding-top: 30px;
+  margin-bottom: 20px;
+}
+
+ul,
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+
+@media (min-width: 400px) and (max-width: 1024px) {
+  .c0 {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+
+  .wrapper {
+    width: 100%;
+
+  }
+
+  .imgbox img {
+    width: 100%;
+  }
+
+  .c1 #fundo {
+    width: 350px;
+    height: 380px;
+  }
+
+}
+
+
+@media (min-width: 362px) and (max-width: 1023px) {
+
+  .imagrigth img,
+  .imagleft img {
+    width: 100%;
+    height: 400px;
+    padding: 25px 0 25px 0;
+    object-fit: contain;
+  }
+
+}
+
+@media (max-width: 1024px) {
+
+  main {
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40% 60%;
+    height: 964px;
+  }
+
+  .imgrigth {
+    height: 482px;
+  }
+
+  main img {
+    width: 450px;
+    height: 450px;
+  }
+
+  .imgleft {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .imgleft img {
+    padding: 0;
+    width: 350px;
+    height: 350px;
+  }
+}
