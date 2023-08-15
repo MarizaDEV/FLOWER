@@ -11,7 +11,7 @@ body {
   font-family: 'Josefin Slab', serif;
 }
 
-.wrapper {
+.bannerinicial {
   display: flex;
   width: 100%;
   justify-content: center;
@@ -20,11 +20,11 @@ body {
   flex-wrap: wrap;
 }
 
-.c0 img {
+.texto0 img {
   width: 171px;
 }
 
-.c0 {
+.texto0 {
   font-size: 35px;
   padding-bottom: 300px;
 
@@ -44,7 +44,7 @@ body {
   animation: animateUser 4s linear infinite;
 }
 
-.c1 #fundo {
+.produto1 #fundo {
   position: absolute;
   display: flex;
   justify-content: flex-end;
@@ -129,38 +129,47 @@ a {
 }
 
 
-@media (min-width: 400px) and (max-width: 1024px) {
-  .c0 {
+@media (min-width: 400px) and (max-width: 722px) {
+  .texto0 {
     width: 100%;
     padding-bottom: 10px;
   }
 
-  .wrapper {
-    width: 100%;
-
-  }
-
   .imgbox img {
-    width: 100%;
+    padding-top: 20px;
+    width: 280px;
+    height: auto;
   }
 
-  .c1 #fundo {
-    width: 350px;
-    height: 380px;
+  .produto1 #fundo {
+    padding-top: 20px;
+    width: 250px;
+    height: 200px;
   }
+
+  .bannerinicial {
+    height: 450px;
+  }
+
+ 
+.imgrigth {
+  height: 200px;
+}
+
+.imagrigth img,
+.imagleft img {
+  height: 400px;
+  margin-top: 60px;
+  object-fit: unset;
+}
 
 }
 
 
-@media (min-width: 362px) and (max-width: 1023px) {
 
-  .imagrigth img,
-  .imagleft img {
-    width: 100%;
-    height: 400px;
-    padding: 25px 0 25px 0;
-    object-fit: contain;
-  }
+
+
+@media (min-width: 362px) and (max-width: 1023px) {
 
 }
 
