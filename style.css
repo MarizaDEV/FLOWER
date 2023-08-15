@@ -151,17 +151,12 @@ a {
     height: 450px;
   }
 
- 
-.imgrigth {
-  height: 200px;
-}
-
-.imagrigth img,
-.imagleft img {
-  height: 400px;
-  margin-top: 60px;
-  object-fit: unset;
-}
+  .imagrigth img,
+  .imagleft img {
+    height: 300px;
+    margin-top: 60px;
+    object-fit: unset;
+  }
 
 }
 
@@ -169,9 +164,7 @@ a {
 
 
 
-@media (min-width: 362px) and (max-width: 1023px) {
-
-}
+@media (min-width: 362px) and (max-width: 1023px) {}
 
 @media (max-width: 1024px) {
 
