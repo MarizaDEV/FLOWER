@@ -12,7 +12,7 @@ body {
 }
 
 .bannerinicial {
-  width: 100%;
+  width: auto;
   height: auto;
   display: flex;
   justify-content: center;
@@ -35,15 +35,15 @@ body {
   height: auto;
 }
 
-main {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.coluna {
+  float: left;
+  width: 50%;
 }
 
-main img {
-  width: 100%;
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 footer {
@@ -91,8 +91,11 @@ a {
     height: auto;
   }
 
-  main {
-    flex-wrap: wrap;
-  }
+}
 
+
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
 }
