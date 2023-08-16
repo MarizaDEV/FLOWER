@@ -12,12 +12,14 @@ body {
 }
 
 .bannerinicial {
-  display: flex;
   width: 100%;
+  height: auto;
+  display: flex;
   justify-content: center;
   align-items: center;
-  padding: 80px 8%;
   flex-wrap: wrap;
+  margin: 10px;
+  gap: 20px;
 }
 
 .texto0 img {
@@ -26,71 +28,22 @@ body {
 
 .texto0 {
   font-size: 35px;
-  padding-bottom: 300px;
-
 }
 
-.imgbox {
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.imgbox img {
-  height: 450px;
-  width: 550px;
-  position: relative;
-  top: 10px;
-  animation: animateUser 4s linear infinite;
-}
-
-.produto1 #fundo {
-  position: absolute;
-  display: flex;
-  justify-content: flex-end;
-  width: 510px;
-  height: 400px;
-}
-
-@keyframes animateUser {
-  50% {
-    top: -50px;
-  }
+.produto1 img {
+  width: 400px;
+  height: auto;
 }
 
 main {
-  height: 450px;
   width: 100%;
-  display: grid;
-  grid-template-columns: 49% 51%;
-  grid-template-rows: 1fr;
-  position: relative;
-}
-
-.imgrigth {
-  width: 100%;
-  height: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
 }
 
-.imagrigth,
-.imagleft {
-  height: 450px;
+main img {
   width: 100%;
-}
-
-.imagrigth img,
-.imagleft img {
-  height: 100%;
-  width: 100%;
-}
-
-.imgleft {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: flex-end;
 }
 
 footer {
@@ -128,85 +81,18 @@ a {
   text-decoration: none;
 }
 
-
-@media (min-width: 400px) and (max-width: 722px) {
+@media (min-width: 300px) and (max-width: 600px) {
   .texto0 {
-    width: 100%;
-    padding-bottom: 10px;
+    font-size: 15px;
   }
 
-  .imgbox img {
-    padding-top: 20px;
-    width: 280px;
+  .produto1 img {
+    width: 300px;
     height: auto;
   }
 
-  .produto1 #fundo {
-    padding-top: 20px;
-    width: 250px;
-    height: 200px;
-  }
-
-  .bannerinicial {
-    height: 450px;
-  }
-
-  .imagrigth img,
-  .imagleft img {
-    height: 300px;
-    margin-top: 60px;
-    object-fit: unset;
-  }
-
-}
-
-@media (min-width: 474px) and (max-width: 700px) {
-
-  .imagrigth img,
-  .imagleft img {
-    height: 300px;
-    margin-top: 60px;
-    object-fit: contain;
-  }
-
-}
-
-
-@media (min-width: 701px) and (max-width: 1023px) {
-
-  .imagrigth img,
-  .imagleft img {
-    height: 300px;
-    object-fit: contain;
-  }
-}
-
-@media (max-width: 1024px) {
-
   main {
-    width: 100%;
-    grid-template-columns: 1fr;
-    grid-template-rows: 40% 60%;
-    height: 964px;
+    flex-wrap: wrap;
   }
 
-  .imgrigth {
-    height: 482px;
-  }
-
-  main img {
-    width: 450px;
-    height: 450px;
-  }
-
-  .imgleft {
-    align-items: center;
-    justify-content: center;
-  }
-
-  .imgleft img {
-    padding: 0;
-    width: 350px;
-    height: 350px;
-  }
 }
